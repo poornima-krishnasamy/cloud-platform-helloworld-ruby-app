@@ -7,4 +7,4 @@ resources:
 
 images:
 - name: 754256621582.dkr.ecr.eu-west-2.amazonaws.com/webops/yy-2006-0001-starter-pack-0
-  newTag: 3349dd80d5acc27ebb525108df4ca5ca2d724a19
+  newTag: 8be59caac8aefc8594976cfa86a06c3a3c0b2f2d
