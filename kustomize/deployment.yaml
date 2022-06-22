@@ -3,7 +3,11 @@ kind: Deployment
 metadata:
   name: helloworld-rubyapp
 spec:
-  replicas: 1
+  replicas: 2
+  strategy:
+    rollingUpdate:
+      maxUnavailable: 0
+    type: RollingUpdate 
   selector:
     matchLabels:
       app: helloworld-rubyapp
@@ -15,5 +19,6 @@ spec:
       containers:
       - name: rubyapp
         image: ministryofjustice/cloud-platform-helloworld-ruby:1.1
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 4567
