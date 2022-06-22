@@ -6,5 +6,5 @@ require 'sinatra'
 set :bind, '0.0.0.0'
 
 get '/' do
-  '<h1>Hello, World Trigger main!</h1>'
+  '<h1>Hello, World Trigger main test!</h1>'
 end
