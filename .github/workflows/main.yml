@@ -37,7 +37,7 @@ jobs:
 
       - name: Set image tag
         run: |
-            cd deploy
+            cd kustomize
             kustomize edit set image $CONTAINER_IMAGE
             cat kustomization.yaml
       - name: Commit kustomization
