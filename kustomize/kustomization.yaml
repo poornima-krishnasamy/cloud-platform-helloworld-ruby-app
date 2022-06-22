@@ -4,3 +4,7 @@ resources:
   - ingress.yaml
   - deployment.yaml
   - service.yaml
+
+images:
+  - name: ministryofjustice/cloud-platform-helloworld-ruby
+    newTag: "1.1"
