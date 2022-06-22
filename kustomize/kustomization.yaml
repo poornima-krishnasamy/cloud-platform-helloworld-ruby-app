@@ -7,6 +7,6 @@ resources:
 
 images:
 - name: 754256621582.dkr.ecr.eu-west-2.amazonaws.com/webops/yy-2006-0001-starter-pack-0
-  newTag: da2d6e432ebc073beeddb4e1831286eed67d22fc
+  newTag: 3349dd80d5acc27ebb525108df4ca5ca2d724a19
 - name: ministryofjustice/cloud-platform-helloworld-ruby
   newTag: "1.1"
