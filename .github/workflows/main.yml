@@ -12,7 +12,7 @@ env:
   AWS_DEFAULT_OUTPUT: json
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  CONTAINER_IMAGE: ${{ secrets.ECR_NAME }}:${{ github.sha }}
+  CONTAINER_IMAGE: ${{ secrets.ECR_URL }}:${{ github.sha }}
 
 jobs:
   build-and-push:
@@ -23,7 +23,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Build
-        run: docker build -t justicedata .
+        run: docker build -t helloworld .
       - name: Push to ECR
         id: ecr
         uses: jwalton/gh-ecr-push@v1
@@ -31,7 +31,7 @@ jobs:
           access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           region: eu-west-2
-          local-image: hellworld
+          local-image: helloworld
           image: ${{ secrets.ECR_NAME }}:${{ github.sha }}
     # Set image tag in kustomization
 
