@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: 754256621582.dkr.ecr.eu-west-2.amazonaws.com/webops/yy-2006-0001-starter-pack-0
-  tag: 9d5d59dcfa60bc0ecfe13f34d17768cf7e5703fc
+  tag: 2e458d4a7a0219c1d99e1c4c664aa9d6414f62d5
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
