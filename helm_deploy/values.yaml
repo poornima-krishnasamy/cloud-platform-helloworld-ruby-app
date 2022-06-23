@@ -5,8 +5,8 @@
 replicaCount: 1
 
 image:
-  repository: ministryofjustice/cloud-platform-helloworld-ruby
-  tag: 1.1
+  repository: 754256621582.dkr.ecr.eu-west-2.amazonaws.com/webops/yy-2006-0001-starter-pack-0
+  tag: da2d6e432ebc073beeddb4e1831286eed67d22fc
   pullPolicy: IfNotPresent
 
 imagePullSecrets: []
@@ -23,7 +23,7 @@ ingress:
   # It can be default(default ingress-controller) or modsec(ingress-controller has the modsec WAF enabled)
   className: ""
   hosts:
-    - host: <DNS-PREFIX>.apps.<cluster-name>.cloud-platform.service.justice.gov.uk
+    - host: helloworld-rubyapp-helm.apps.yy-2006-0001.cloud-platform.service.justice.gov.uk
       paths: /
 
   tls: []
