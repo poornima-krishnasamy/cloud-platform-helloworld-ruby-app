@@ -1,0 +1,8 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+- values.yaml
+
+images:
+- name: 754256621582.dkr.ecr.eu-west-2.amazonaws.com/webops/yy-2006-0001-starter-pack-0
+  newTag: 2e458d4a7a0219c1d99e1c4c664aa9d6414f62d5
