@@ -42,6 +42,11 @@ jobs:
             cd kustomize
             kustomize edit set image $CONTAINER_IMAGE
             cat kustomization.yaml
+      - name: Set image tag
+        run: |
+            cd helm_deploy
+            kustomize edit set image $CONTAINER_IMAGE
+            cat kustomization.yaml
       - name: Commit kustomization
         run: |
             git config --local user.email "action@github.com"
