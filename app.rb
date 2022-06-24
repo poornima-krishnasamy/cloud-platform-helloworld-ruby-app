@@ -6,5 +6,5 @@ require 'sinatra'
 set :bind, '0.0.0.0'
 
 get '/' do
-  '<h1>Hello, World Trigger helm and kubectl!</h1>'
+  '<h1>Hello, World Trigger helm and kubectl demo!</h1>'
 end
